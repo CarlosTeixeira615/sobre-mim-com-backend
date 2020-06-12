@@ -82,7 +82,9 @@ header {
 }
 
 .card {
-	background-color: #7159c1;
+	background-color: #3514a5;
+	display: grid;
+	cursor: pointer;
 }
 .image img {
 	width: 100%;
@@ -95,6 +97,7 @@ header {
 .info {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
 .price {
 	background-color: #7159c1;
@@ -131,9 +134,35 @@ header {
 	opacity: 1;
 	visibility: visible;
 }
-.frame {
+.iframe {
 	width: 100%;
 	height: 90%;
+	position: absolute;
+	top: 6%;
+}
+.featured-wrapper .image {
+	position: relative;
+}
+.featured {
+	position: absolute;
+	background: #f7f7f7;
+	color: black;
+	padding: 2px 8px;
+	top: -270px;
+	border-radius: 16px;
+}
+
+.video {
+	margin: 0 auto;
+	max-width: 800px;
+}
+.card_video {
+	position: relative;
+	padding-top: 63%;
+}
+.iframe2 {
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 6%;
 }

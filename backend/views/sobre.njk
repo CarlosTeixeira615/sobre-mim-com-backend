@@ -1,0 +1,28 @@
+{% extends "layout.njk" %}
+{% block content %}
+
+  {% block head %}
+    <title>helo word</title>
+  {% endblock %}
+
+  <div id="wrapper">
+    <img src="{{ sobre.avatar_url }}" alt="lalla"/>
+    <h1>
+      {{sobre.name}}
+    </h1>
+    <h2>
+      {{sobre.role}}
+    </h2>
+  </a>
+  <p>
+    {{sobre.description}}
+  </p>
+</div>
+<div id="footler" class="menu">
+  {% for link in sobre.links %}
+    <a href="{{link.url}}" target="_blank">
+      {{link.name}}
+    </a>
+  {% endfor %}
+</div>
+{% endblock %}
